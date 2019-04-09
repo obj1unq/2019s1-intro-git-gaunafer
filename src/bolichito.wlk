@@ -10,7 +10,8 @@ object bolichito {
 	method ponerEnVidriera(objeto) { objetoEnVidriera = objeto }
 	
 	method esBrillante() { 
-		return objetoEnMostrador.material().brilla() or objetoEnVidriera.material().brilla()
+		// O hay que cambiar por un 'and' o hay que modificar el test
+		return objetoEnMostrador.material().brilla() and objetoEnVidriera.material().brilla()
 	}
 	
 	method esMonocromatico() {

@@ -5,11 +5,13 @@ object rosa {
 }
 
 object estefania {
-	method leGusta(objeto) { return false }
+	method leGusta(objeto) { return objeto.color().esFuerte()}
 }
 
 object luisa {
-	method leAgrada(objeto) { return objeto.material().brilla() }
+	//Primer Error de los test: Method mal nombrado
+	//method leAgrada(objeto) { return objeto.material().brilla() }
+	method leGusta(objeto) { return objeto.material().brilla() }
 }
 
 object juan {
